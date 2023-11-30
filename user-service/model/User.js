@@ -5,7 +5,7 @@ const userSchema = new Schema({
   email: { type: String, required: true },
   password: { type: String, required: true },
   adresse: { type: String, required: false },
-  roles: { type: Array, required: true },
+  roles: { type: Array, required: true, default: [] },
   birthDate: { type: Date, required: true },
   image: { type: String, required: false },
   created_at: { type: Date, required: true, default: Date.now },
